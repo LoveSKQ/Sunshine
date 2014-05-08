@@ -1,7 +1,8 @@
-package com.rmj.Sunshine;
+package com.rmj.Sunshine.core.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
+import com.rmj.Sunshine.R;
 
 public class MyActivity extends Activity {
     /**
