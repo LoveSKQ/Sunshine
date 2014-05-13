@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../MediaPlayer/MediaPlayer/MediaPlayer.iml" filepath="$PROJECT_DIR$/../MediaPlayer/MediaPlayer/MediaPlayer.iml" />
       <module fileurl="file://$PROJECT_DIR$/MediaPlayer/MediaPlayer/MediaPlayer.iml" filepath="$PROJECT_DIR$/MediaPlayer/MediaPlayer/MediaPlayer.iml" />
       <module fileurl="file://$PROJECT_DIR$/Sunshine.iml" filepath="$PROJECT_DIR$/Sunshine.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../MediaPlayer/vitamio/vitamio.iml" filepath="$PROJECT_DIR$/../MediaPlayer/vitamio/vitamio.iml" />
       <module fileurl="file://$PROJECT_DIR$/MediaPlayer/vitamio/vitamio.iml" filepath="$PROJECT_DIR$/MediaPlayer/vitamio/vitamio.iml" />
     </modules>
   </component>
