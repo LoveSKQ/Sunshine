@@ -43,7 +43,7 @@ public abstract class BaseActivity extends Activity {
             _contentLayout.addView(mContentView);
         }
         else {
-            //加载失败处理
+            //TODO 加载失败处理
         }
     }
 

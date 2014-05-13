@@ -14,5 +14,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".media.activity.AudioPlayer"/>
+        <service android:name="com.rmj.mediaplayer.core.service.MediaService"/>
     </application>
 </manifest>

@@ -1,5 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/res/anim/popup_in.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/anim/popup_out.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/audio_play_video.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/audio_player_back.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/audio_player_list.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/audio_player_list_down.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/audio_player_pause.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/audio_player_play.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/audio_player_question.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/audio_player_share.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/audio_player_share_down.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/bg_main.jpg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/hotline.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/hotline_btn_normal.9.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/hotline_btn_pressed.9.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/ic_launcher.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/live_content.9.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/media_controller_pause.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/media_controller_play.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/navigation_btn_normal.9.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/navigation_btn_pressed.9.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/reply_detail_date.9.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/reply_detail_green.9.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/reply_detail_head_sunshine.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/reply_detail_head_user.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/reply_detail_noreply.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/reply_detail_white.9.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/seek_down.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/seek_up.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/audio_player_back.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/audio_player_list.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/audio_player_list_down.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/audio_player_pause.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/audio_player_play.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/audio_player_question.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/audio_player_share.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/audio_player_share_down.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/bg_main.jpg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/hotline_btn.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/hotline_btn_normal.9.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/hotline_btn_pressed.9.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/ic_launcher.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/navigation_btn.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/seek_down.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/seek_up.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/res/drawable/seekbar_style.xml" charset="UTF-8" />
+  </component>
 </project>
 
