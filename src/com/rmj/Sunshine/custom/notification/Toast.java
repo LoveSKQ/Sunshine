@@ -1,4 +1,4 @@
-package com.rmj.Sunshine.notification;
+package com.rmj.Sunshine.custom.notification;
 
 import android.content.Context;
 

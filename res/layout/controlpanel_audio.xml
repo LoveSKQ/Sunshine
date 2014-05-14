@@ -69,7 +69,7 @@
                          android:background="@color/transparent"
                          android:src="@drawable/audio_player_play"/>
             <ProgressBar
-                    android:id="@+id/probar"
+                    android:id="@+id/audio_player_waiting"
                     style="?android:attr/progressBarStyleLarge"
                     android:layout_width="60dp"
                     android:layout_height="60dp"

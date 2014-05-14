@@ -1,4 +1,4 @@
-package com.rmj.Sunshine.constants;
+package com.rmj.Sunshine.custom.constants;
 
 /**
  * Created by G11 on 2014/5/9.

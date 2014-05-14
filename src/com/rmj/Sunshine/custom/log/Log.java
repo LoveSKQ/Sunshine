@@ -1,6 +1,6 @@
-package com.rmj.Sunshine.log;
+package com.rmj.Sunshine.custom.log;
 
-import com.rmj.Sunshine.constants.Constants;
+import com.rmj.Sunshine.custom.constants.Constants;
 
 /**
  * Created by G11 on 2014/5/9.

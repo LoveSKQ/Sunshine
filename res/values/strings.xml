@@ -3,6 +3,8 @@
     <string name="app_name">Sunshine</string>
     <string name="default_title">阳光热线</string>
     <string name="media_player_hotline">热线电话</string>
-    <string name="media_status_paused">暂停</string>
+    <string name="media_status_paused">播放</string>
+    <string name="media_status_waiting">载入中...</string>
+    <string name="media_status_played">暂停</string>
     <string name="media_player_share">分享</string>
 </resources>

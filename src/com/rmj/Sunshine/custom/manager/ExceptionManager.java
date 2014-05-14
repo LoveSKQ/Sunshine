@@ -1,6 +1,6 @@
-package com.rmj.Sunshine.manager;
+package com.rmj.Sunshine.custom.manager;
 
-import com.rmj.Sunshine.log.Log;
+import com.rmj.Sunshine.custom.log.Log;
 
 /**
  * Created by G11 on 2014/5/9.

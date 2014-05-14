@@ -1,4 +1,4 @@
-package com.rmj.Sunshine.media.adapter;
+package com.rmj.Sunshine.module.media.adapter;
 
 /**
  * Created by G11 on 2014/5/13.

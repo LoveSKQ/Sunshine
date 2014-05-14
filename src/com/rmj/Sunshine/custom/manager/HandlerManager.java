@@ -1,4 +1,4 @@
-package com.rmj.Sunshine.manager;
+package com.rmj.Sunshine.custom.manager;
 
 /**
  * Created by G11 on 2014/5/12.

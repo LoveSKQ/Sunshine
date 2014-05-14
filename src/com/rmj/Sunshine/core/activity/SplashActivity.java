@@ -4,7 +4,10 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import com.rmj.Sunshine.R;
-import com.rmj.Sunshine.media.service.MediaService;
+import com.rmj.mediaplayer.core.bean.MediaInfo;
+import com.rmj.mediaplayer.core.manager.MediaManager;
+import com.rmj.mediaplayer.core.service.MediaService;
+import io.vov.vitamio.LibsChecker;
 
 /**
  * Created by G11 on 2014/5/9.
@@ -12,6 +15,7 @@ import com.rmj.Sunshine.media.service.MediaService;
 public class SplashActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (!LibsChecker.checkVitamioLibs(this)) return;
         setContentView(R.layout.activity_splash);
     }
 
@@ -19,7 +23,7 @@ public class SplashActivity extends Activity {
     protected void onStart() {
         super.onStart();
         init();
-//        if (!LibsChecker.checkVitamioLibs(this)) return;
+        initTemp();
         startMainActivity();
     }
 
@@ -30,8 +34,18 @@ public class SplashActivity extends Activity {
         startService(new Intent(SplashActivity.this, MediaService.class));
     }
 
+    /**
+     * 初始化一些测试用的临时数据
+     */
+    void initTemp() {
+        MediaInfo _info = new MediaInfo();
+        _info.setUrl("mms://dianbo.hebradio.com/live1");
+        MediaManager.getInstance().setCurrentMedia(_info);
+    }
+
     void startMainActivity() {
         Intent _intent = new Intent(SplashActivity.this,MainActivity.class);
         startActivity(_intent);
+        finish();
     }
 }
