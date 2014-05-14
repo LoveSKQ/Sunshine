@@ -10,7 +10,6 @@ import android.widget.TextView;
 import com.rmj.Sunshine.R;
 import com.rmj.Sunshine.custom.notification.Toast;
 import com.rmj.mediaplayer.core.controller.PlayerControl;
-import com.rmj.mediaplayer.core.service.MediaService;
 
 /**
  * Created by G11 on 2014/5/14.
@@ -74,7 +73,7 @@ public class MediaControlPanel extends com.rmj.mediaplayer.core.controller.Media
     protected void played() {
         mPlayPauseButton.setVisibility(View.VISIBLE);
         mWaiting.setVisibility(View.GONE);
-        mPlayPauseButton.setImageResource(R.drawable.audio_player_pause);
+        mPlayPauseButton.setImageResource(R.drawable.media_player_pause);
         mPlayPauseTextView.setText(R.string.media_status_played);
     }
 
@@ -82,7 +81,7 @@ public class MediaControlPanel extends com.rmj.mediaplayer.core.controller.Media
     protected void paused() {
         mPlayPauseButton.setVisibility(View.VISIBLE);
         mWaiting.setVisibility(View.GONE);
-        mPlayPauseButton.setImageResource(R.drawable.audio_player_play);
+        mPlayPauseButton.setImageResource(R.drawable.media_player_play);
         mPlayPauseTextView.setText(R.string.media_status_paused);
     }
 

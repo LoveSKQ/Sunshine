@@ -44,7 +44,7 @@ public class SplashActivity extends Activity {
     }
 
     void startMainActivity() {
-        Intent _intent = new Intent(SplashActivity.this,MainActivity.class);
+        Intent _intent = new Intent(SplashActivity.this,AudioActivity.class);
         startActivity(_intent);
         finish();
     }
