@@ -47,7 +47,7 @@ public abstract class TileButton extends View {
             int _width = mDisplayMetrics.widthPixels;
             _base = _width/3;
         } else {
-            //TODO 未设置DisplayMetrics
+            //TODO 未设置DisplayMetrics，设为默认值
         }
         return _base;
     }
