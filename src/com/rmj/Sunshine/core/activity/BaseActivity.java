@@ -28,6 +28,7 @@ public abstract class BaseActivity extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_base);
         initComponents();
+        initContentComponents();
     }
 
     /**
