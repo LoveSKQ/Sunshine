@@ -10,8 +10,9 @@ import android.view.View;
  */
 public abstract class TileButton extends View {
 
-    DisplayMetrics mDisplayMetrics = null;
-    int mGap = 0;
+    int mVerticalSpacing = 0;
+    int mHorizontalSpacing = 0;
+    int mWeightBase = 0;
     int mHeight;
     int mWidth;
 
@@ -19,40 +20,51 @@ public abstract class TileButton extends View {
         super(context, attrs);
     }
 
+    public TileButton setBaseParams(int horizontal, int vertical, int weightbase) {
+        mVerticalSpacing = vertical;
+        mHorizontalSpacing = horizontal;
+        mWeightBase = weightbase;
+        return this;
+    }
+
+    public TileButton setSize(int heightweight,int widthweight) {
+        setWidth(widthweight);
+        setHeight(heightweight);
+        return this;
+    }
+
     public abstract void init();
 
     /**
      * 设置组件高度
+     *
      * @param weight
      */
-    public void setHeightWeight(int weight) {
-        mHeight = getWeightBase()*weight - mGap;
+    public void setHeight(int weight) {
+        if (weight != 0)
+            mHeight = mWeightBase * weight + (weight - 1) * mVerticalSpacing;
+        else
+            mHeight = 0;
     }
 
     /**
      * 设置组件宽度
+     *
      * @param weight
      */
-    public void setWidthWeight(int weight) {
-        mWidth = getWeightBase()*weight - mGap;
+    public void setWidth(int weight) {
+        if (weight != 0)
+            mWidth = mWeightBase * weight + (weight - 1) * mHorizontalSpacing;
+        else
+            mWidth = 0;
     }
 
     /**
-     * 获得权重基数
+     * 设置权重基数
+     *
      * @return
      */
-    public int getWeightBase() {
-        int _base = 0;
-        if (mDisplayMetrics != null) {
-            int _width = mDisplayMetrics.widthPixels;
-            _base = _width/3;
-        } else {
-            //TODO 未设置DisplayMetrics，设为默认值
-        }
-        return _base;
-    }
-
-    private void setDisplayMetrics(DisplayMetrics dm) {
-        mDisplayMetrics = dm;
+    public void setWeightBase(int weightBase) {
+        mWeightBase = weightBase;
     }
 }
