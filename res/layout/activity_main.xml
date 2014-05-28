@@ -10,57 +10,16 @@
             android:layout_weight="2">
 
     </ViewFlipper>
-    <!--
     <GridView
             android:id="@+id/tiles_gv"
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:layout_weight="5"
-            android:numColumns="auto_fit"
+            android:numColumns="3"
             android:horizontalSpacing="10dp"
             android:verticalSpacing="10dp"
+            android:stretchMode="columnWidth"
             android:scrollbars="none"
             >
     </GridView>
-    -->
-    <ScrollView
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="5">
-        <GridLayout
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:columnCount="3"
-                android:orientation="horizontal"
-                >
-            <RelativeLayout
-                    android:layout_columnSpan="2"
-                    android:layout_gravity="fill"
-                    android:layout_row="0"
-                    android:layout_column="0"
-                    >
-                <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_home_feedback"/>
-            </RelativeLayout>
-            <LinearLayout
-                    android:layout_row="0"
-                    android:layout_column="2"
-                    android:orientation="vertical">
-                <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_home_feedback"/>
-                <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="我要提问"/>
-
-            </LinearLayout>
-
-        </GridLayout>
-    </ScrollView>
-
-
 </LinearLayout>

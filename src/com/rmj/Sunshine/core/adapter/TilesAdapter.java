@@ -1,14 +1,18 @@
 package com.rmj.Sunshine.core.adapter;
 
+import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.LinearLayout;
+import com.rmj.Sunshine.R;
 import com.rmj.Sunshine.custom.utils.buttons.ImageTileButton;
 import com.rmj.Sunshine.custom.utils.buttons.TileButton;
 
 import java.util.*;
+import java.util.zip.Inflater;
 
 /**
  * Created by G11 on 2014/5/26.
@@ -19,14 +23,16 @@ public class TilesAdapter extends BaseAdapter {
     int mVerticalSpacing = 0;
     int mWeightBase = 0;
     ArrayList<TileButton> mTilesList;
+    Context mContext;
 
-    public TilesAdapter() {
+    public TilesAdapter(Context context) {
+        mContext = context;
         init();
     }
 
     public void init() {
         mTilesList = new ArrayList<>();
-        for (int i = 0; i < 9; i++) {
+        for (int i = 0; i < 12; i++) {
             mTilesList.add(i, null);
         }
     }
@@ -48,12 +54,15 @@ public class TilesAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        if (mWeightBase == 0) {
+        if (mWeightBase <= 0) {
             initWeightBase(parent);
         }
+        ImageTileButton _tile;
         if (convertView == null) {
-            convertView = new ImageTileButton(parent.getContext()).setBaseParams(mHorizontalSpacing,mVerticalSpacing,mWeightBase).setSize(1, 2).init();
-            convertView.setLayoutParams(new LinearLayout.LayoutParams(convertView.getWidth(),convertView.getHeight()));
+            _tile = (ImageTileButton)((ImageTileButton) LayoutInflater.from(mContext).inflate(R.layout.image_tile_item,parent,false)).setBaseParams(mHorizontalSpacing,mVerticalSpacing,mWeightBase).setSize(1, 1).init();
+            _tile.setImage(R.drawable.tile_feedback);
+            _tile.setText(R.string.tile_feedback);
+            convertView = _tile;
         }
         return convertView;
     }

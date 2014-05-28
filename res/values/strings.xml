@@ -7,4 +7,11 @@
     <string name="media_status_waiting">载入中...</string>
     <string name="media_status_played">暂停</string>
     <string name="media_player_share">分享</string>
+    
+    <!-- Tile Title -->
+    <string name="tile_question">我要提问</string>
+    <string name="tile_history">往期回顾</string>
+    <string name="tile_authority">权威政策</string>
+    <string name="tile_journal">阳光月刊</string>
+    <string name="tile_feedback">阳光反馈</string>
 </resources>

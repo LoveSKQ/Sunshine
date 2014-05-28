@@ -13,33 +13,25 @@ import com.rmj.Sunshine.R;
  */
 public class ImageTileButton  extends TileButton {
 
-    ImageView mImageView;
-    TextView mTextView;
-
-    public ImageTileButton(Context context) {
-        super(context);
-    }
+    protected ImageView mImageView;
+    protected TextView mTextView;
 
     public ImageTileButton(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
     @Override
-    public TileButton init() {
-        LayoutInflater _inflater = LayoutInflater.from(mContext);
-        View _view = _inflater.inflate(R.layout.image_tile_item,this,true);
-        mImageView = (ImageView) _view.findViewById(R.id.image_tile_image);
-        mTextView = (TextView) _view.findViewById(R.id.image_tile_text);
-        setImageView(R.drawable.ic_home_feedback);
-        setTextView("我要提问");
+    public ImageTileButton init() {
+        mImageView = (ImageView) findViewById(R.id.image_tile_image);
+        mTextView = (TextView) findViewById(R.id.image_tile_text);
         return this;
     }
 
-    public void setImageView(int resID) {
+    public void setImage(int resID) {
         mImageView.setImageResource(resID);
     }
 
-    public void setTextView(String text) {
-        mTextView.setText(text);
+    public void setText(int resID) {
+        mTextView.setText(getResources().getString(resID));
     }
 }

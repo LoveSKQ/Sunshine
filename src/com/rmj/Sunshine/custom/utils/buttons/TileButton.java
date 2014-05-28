@@ -1,33 +1,25 @@
 package com.rmj.Sunshine.custom.utils.buttons;
 
 import android.content.Context;
-import android.graphics.Canvas;
 import android.graphics.Color;
 import android.util.AttributeSet;
-import android.view.ViewGroup;
-import android.widget.LinearLayout;
+import android.view.MotionEvent;
+import android.widget.GridView;
 import android.widget.RelativeLayout;
 
 /**
  * Created by G11 on 2014/5/20.
  */
-public abstract class TileButton extends LinearLayout {
+public abstract class TileButton extends RelativeLayout {
 
     int mVerticalSpacing = 0;
     int mHorizontalSpacing = 0;
     int mWeightBase = 0;
     int mHeight;
     int mWidth;
-    Context mContext;
-
-    protected TileButton(Context context) {
-        super(context);
-        mContext = context;
-    }
 
     public TileButton(Context context, AttributeSet attrs) {
         super(context, attrs);
-        mContext = context;
     }
 
     public TileButton setBaseParams(int horizontal, int vertical, int weightbase) {
@@ -40,6 +32,9 @@ public abstract class TileButton extends LinearLayout {
     public TileButton setSize(int heightweight,int widthweight) {
         setWidthWeight(widthweight);
         setHeightWeight(heightweight);
+        //TODO 处理有问题，暂时
+        setBackgroundColor(Color.GRAY);
+        setLayoutParams(new GridView.LayoutParams(mWidth,mHeight));
         return this;
     }
 
@@ -69,18 +64,23 @@ public abstract class TileButton extends LinearLayout {
             mWidth = 0;
     }
 
-    /**
-     * 设置权重基数
-     *
-     * @return
-     */
-    public void setWeightBase(int weightBase) {
-        mWeightBase = weightBase;
-    }
-
     @Override
-    protected void onDraw(Canvas canvas) {
-        super.onDraw(canvas);
-        canvas.drawColor(Color.DKGRAY);
+    public boolean onTouchEvent(MotionEvent event) {
+        switch (event.getAction()) {
+            case MotionEvent.ACTION_UP:
+                this.setPadding(this.getPaddingLeft() - 2, this.getPaddingTop() - 2, this.getPaddingRight() - 2, this.getPaddingBottom() - 2);
+                setBackgroundColor(Color.GRAY);
+                break;
+            case MotionEvent.ACTION_DOWN:
+                this.setPadding(this.getPaddingLeft() + 2, this.getPaddingTop() + 2, this.getPaddingRight() + 2, this.getPaddingBottom() + 2);
+                setBackgroundColor(Color.DKGRAY);
+                break;
+            case MotionEvent.ACTION_CANCEL:
+                this.setPadding(this.getPaddingLeft() - 2, this.getPaddingTop() - 2, this.getPaddingRight() - 2, this.getPaddingBottom() - 2);
+                setBackgroundColor(Color.GRAY);
+            default:
+                break;
+        }
+        return true;
     }
 }
