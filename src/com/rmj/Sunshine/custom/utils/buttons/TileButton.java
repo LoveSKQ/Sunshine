@@ -33,7 +33,7 @@ public abstract class TileButton extends RelativeLayout {
         setWidthWeight(widthweight);
         setHeightWeight(heightweight);
         //TODO 处理有问题，暂时
-        setBackgroundColor(Color.GRAY);
+        setAlphaBackground(Color.GRAY);
         setLayoutParams(new GridView.LayoutParams(mWidth,mHeight));
         return this;
     }
@@ -69,18 +69,23 @@ public abstract class TileButton extends RelativeLayout {
         switch (event.getAction()) {
             case MotionEvent.ACTION_UP:
                 this.setPadding(this.getPaddingLeft() - 2, this.getPaddingTop() - 2, this.getPaddingRight() - 2, this.getPaddingBottom() - 2);
-                setBackgroundColor(Color.GRAY);
+                setAlphaBackground(Color.GRAY);
                 break;
             case MotionEvent.ACTION_DOWN:
                 this.setPadding(this.getPaddingLeft() + 2, this.getPaddingTop() + 2, this.getPaddingRight() + 2, this.getPaddingBottom() + 2);
-                setBackgroundColor(Color.DKGRAY);
+                setAlphaBackground(Color.DKGRAY);
                 break;
             case MotionEvent.ACTION_CANCEL:
                 this.setPadding(this.getPaddingLeft() - 2, this.getPaddingTop() - 2, this.getPaddingRight() - 2, this.getPaddingBottom() - 2);
-                setBackgroundColor(Color.GRAY);
+                setAlphaBackground(Color.GRAY);
             default:
                 break;
         }
         return true;
+    }
+
+    void setAlphaBackground(int color) {
+        setBackgroundColor(color);
+        setAlpha(1);
     }
 }
